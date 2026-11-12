@@ -30,7 +30,10 @@ async def metrics_middleware(request: Request, call_next):
         if path != "/metrics":
             LATENCY.labels(path).observe(time.perf_counter() - start)
             REQUESTS.labels(request.method, path, status).inc()
-#commentaire inutile
+
+
+# commentaire inutile
+
 
 @app.get("/")
 def root(response: Response):
