@@ -33,7 +33,7 @@ async def metrics_middleware(request: Request, call_next):
 
 
 # commentaire inutile
-
+# autre commentaire
 
 @app.get("/")
 def root(response: Response):
