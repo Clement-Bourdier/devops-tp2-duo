@@ -33,12 +33,12 @@ async def metrics_middleware(request: Request, call_next):
 
 
 # commentaire inutile
-
+# autre commentaire
 
 @app.get("/")
 def root(response: Response):
     n = r.incr("visites")
-    response.headers["X-Visites-Version"] = 42
+    response.headers["X-Visites-Version"] = VERSION
     return {"visites": n}
 
 
