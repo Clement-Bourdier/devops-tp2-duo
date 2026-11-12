@@ -1,10 +1,11 @@
+import os
+from dataclasses import dataclass
+
 # Étape 4 : version de app/config.py
 #à committer pour déclencher le hook gitleaks (règle aws-secret-key).
 # Clé d'exemple de la documentation AWS : valeur fictive, 40 caractères.
-import os
-AWS_SECRET_ACCESS_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEYAAAAAAAAAAAHMARCHEPAS"
-from dataclasses import dataclass
 
+AWS_SECRET_ACCESS_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEYAAAAAAAAAAAHMARCHEPAS"
 
 @dataclass(frozen=True)
 class Settings:
