@@ -3,7 +3,7 @@ updates:
   - package-ecosystem: pip
     directory: /
     schedule: { interval: weekly }
-    commit-message: { prefic: "chore(deps)" }
+    commit-message: { prefix: "chore(deps)" }
   - package-ecosystem: github-actions
     directory: /
     schedule: { interval: weekly }
