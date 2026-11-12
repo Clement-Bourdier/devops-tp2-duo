@@ -8,5 +8,5 @@ updates:
     directory: /
     schedule: { interval: weekly }
   - package-ecosystem: docker
-    directoty: /
+    directory: /
     schedule: { interval: weekly }
